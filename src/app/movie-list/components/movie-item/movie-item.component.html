@@ -1,0 +1,17 @@
+<div class="movieItem row">
+  <div class="col-sm-8">
+    <div class="movieTitle">
+      {{ movie?.title }}
+    </div>
+    <div class="movieSubtitle">
+      <div>Release date: {{ movie?.release_date }}</div>
+      <div>Budget: ${{ movie?.budget }} million</div>
+      <div>Duration: {{ movie?.duration | duration }}</div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <button [id]="movie?.id" [routerLink]="['/detailedMovie/', movie?.id]">
+      Détails
+    </button>
+  </div>
+</div>

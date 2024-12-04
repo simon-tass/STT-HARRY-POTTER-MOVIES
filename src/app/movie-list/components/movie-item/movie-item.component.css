@@ -1,0 +1,20 @@
+.movieItem {
+    margin: 5px;
+}
+.movieTitle {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.movieSubtitle {
+    display: inline-flex;
+}
+
+.movieSubtitle > div {
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+button {
+    float: right;
+}

@@ -1,0 +1,19 @@
+<form [formGroup]="filterGroup">
+  <p><strong>Filters</strong></p>
+
+  <div class="row">
+    <div>
+      <label for="title">Title:</label>
+      <input id="title" type="text" formControlName="title" />
+    </div>
+    <div>
+      <label for="releaseYear">Release year:</label>
+      <input
+        id="releaseYear"
+        type="number"
+        formControlName="releaseYear"
+        min="1900"
+      />
+    </div>
+  </div>
+</form>

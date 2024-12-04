@@ -1,0 +1,8 @@
+<app-movie-filter (movieFilters)="filterMovies($event)" />
+<ul>
+  @for (movie of movieListFiltered; track movie.id) {
+  <li>
+    <app-movie-item [movie]="movie" />
+  </li>
+  }
+</ul>

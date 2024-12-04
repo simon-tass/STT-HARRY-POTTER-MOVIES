@@ -1,0 +1,32 @@
+.middle {
+  vertical-align: middle;
+}
+
+h3 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.summary {
+  margin-top: 5px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  overflow: unset;
+  border-top: .0625rem solid var(--table-border-color);
+  padding: 0;
+}
+
+th:first-child, td:first-child {
+  flex: 1 0 20%;
+  text-align: end;
+  font-weight: bold;
+  border-right: 1px solid black;
+  background-color: #e5e9f0;
+}
+
+th:nth-child(2), td:nth-child(2) {
+  flex: 1 0 60%;
+}
